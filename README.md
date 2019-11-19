@@ -7,3 +7,5 @@ Script writen for russian, files uses cyrilyc encoding windows-1251
 Скрипт на PowerShell для автоматического создания пользователей в AD с генерацией сложного пароля, почтового ящика и учетной записи в Skype for Business
 
 Написан для рускоговорящих администраторов, кодировка файлов windows-1251.
+
+Сайт проекта: https://www.k7d.ru/programmirovanie/sozdanie-polzovatelya-v-active-directory-exchange-i-skype-sredstvami-powershell/
