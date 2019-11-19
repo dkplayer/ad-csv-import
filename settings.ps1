@@ -1,24 +1,26 @@
-#Параметры отправки почты
+# E-mail notification settings
 $EmailFrom = "it@example.com"
 $EmailTo = "admin@example.com"
-$Subject = "Новые пользователи"
-$body = "Новые пользователи в домене: `n`n"
+$Subject = "New Users"
+$body = "New users in domain: `n`n"
 
-#Основные параметры
+# Common options
 $UserList=IMPORT-CSV  -Encoding default users.csv
 $Domain="@example.com"
 $domain_short="example\"
-# OU куда добавлять
+
+# OU where new users will be crated
 $OU="OU=new,DC=example,DC=com"
-#Параметры почтового сервера для отправки сообщения
+
+# SMTP Server 
 $SmtpServer = “smtp.example.com”
 $smtp_port=25
 
-#Параметры Exchange
+# Exchange server remote powershell connection url & mail database name where mailbox will be crated
 $exch_database="Mailbox Database Name"
 $exch_server="http://exch.example.com/PowerShell/"
 
-#Skype
+# Skype server remote powershell connection url & server pool where sip account will be crated
 $sip_domain="example.com"
 $skype_server="https://skype.example.com/ocspowershell/"
 $sip_pool="pool.example.com"
